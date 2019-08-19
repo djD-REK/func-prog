@@ -1,7 +1,18 @@
 import "./styles.css";
 
 var sum = 0;
-var list = { a: 1, b: 2, c: 3 };
+var list = [1, 2, 3];
+
+for (var i in list) {
+  sum += list[i];
+}
+
+console.log(sum);
+// expected output: "123"
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
